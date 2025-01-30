@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Song Player</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add favicon -->
+    <title>Funky Music Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="logo">Song Player</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">song Playlist</a></li>
-            <li><a href="#">fav list</a></li>
-            <li><a href="#">arjit singh</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <h1>Welcome to My Song Player</h1>
-        <p>Enjoy your favorite tunes with ease!</p>
+    <div class="container">
+        <aside class="side_stuffs">
+            <h1 class="logo">✨Funky</h1>
+            <button class="menu">|||Library</button>
+            <div class="playlist">Your Playlist</div>
+        </aside>
+        <main class="content">
+            <header class="Headings_stuffs">
+                <input type="text" class="search" placeholder="Search......">
+                <nav class="nav-links">
+                    <button>Home</button>
+                    <button>My Fav</button>
+                    <button>History</button>
+                    <button>Artists</button>
+                </nav>
+            </header>
+            <section class="albums">
+                <h2>Albums</h2>
+                <div class="album-list">
+                    <div class="album">Albums1</div>
+                    <div class="album">Albums2</div>
+                    <div class="album">Albums3</div>
+                    <div class="album">Albums4</div>
+                </div>
+            </section>
+            <section class="artists">
+                <h2>Artists</h2>
+                <div class="artist-list">
+                    <div class="artist">Artist1</div>
+                    <div class="artist">Artist2</div>
+                    <div class="artist">Artist3</div>
+                    <div class="artist">Artist4</div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
+
 </html>
