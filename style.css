@@ -1,62 +1,88 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Navbar Styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #08c557;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-nav .logo {
-    font-size: 24px;
+    background: black;
     color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.side_stuffs {
+    width: 200px;
+    background: linear-gradient(to bottom, #ffccff, #99ccff);
+    padding: 20px;
+    height: 100vh;
+}
+
+.logo {
+    font-size: 24px;
     font-weight: bold;
 }
 
-nav .nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav .nav-links li {
-    margin: 0 10px;
-}
-
-nav .nav-links a {
-    text-decoration: none;
-    color: white;
+.menu {
+    display: block;
+    background: none;
+    border: none;
     font-size: 18px;
-    transition: color 0.3s;
+    font-weight: bold;
+    margin: 20px 0;
+    cursor: pointer;
 }
 
-nav .nav-links a:hover {
-    color: #ffd700;
-}
-
-/* Content Section */
-.content {
+.playlist {
+    padding: 10px;
+    background: linear-gradient(to bottom, #99ccff, #ffccff);
+    border-radius: 10px;
     text-align: center;
-    margin-top: 50px;
+}
+
+.content {
+    flex: 1;
     padding: 20px;
 }
 
-.content h1 {
-    font-size: 36px;
-    color: #6200ea;
+.Headings_stuffs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffcc99, #ff99ff);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.content p {
-    font-size: 18px;
-    color: #555;
+.search {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.albums,
+.artists {
+    margin-top: 20px;
+}
+
+.album-list,
+.artist-list {
+    display: flex;
+    gap: 10px;
+}
+
+.album,
+.artist {
+    background: linear-gradient(to bottom, #99ffcc, #99ccff);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
 }
